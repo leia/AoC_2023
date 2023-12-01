@@ -1,13 +1,13 @@
 ﻿module Advent_of_code_2023.Helpers
 
 module String =
-    let IndicesOfAll (needle : string) (haystack : string): int list =
+    let IndicesOfAll (substring : string) (str : string): int list =
         let rec loop (indices: int list) (index : int) =
-            if index >= String.length haystack then indices
+            if index >= String.length str then indices
             else
-                match haystack.IndexOf(needle, index) with
+                match str.IndexOf(substring, index) with
                 | -1 -> indices
                 | idx -> loop (indices @ [idx+1]) (idx + 1)
-        if String.length needle = 0 then [] else loop [] 0
+        if String.length substring = 0 then [] else loop [] 0
         
 
