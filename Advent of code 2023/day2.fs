@@ -22,7 +22,7 @@ let private processData (line: string) =
     
     gameTurns
 
-let private isImpossible (gameId: int, r: int, g: int, b: int) =
+let private isImpossible (_: int, r: int, g: int, b: int) =
     let redMax, greenMax, blueMax = 12, 13, 14    
     r > redMax || g > greenMax || b > blueMax
     
@@ -55,7 +55,7 @@ let secondPart(data: string seq) =
         |> Seq.map processData
         |> Seq.concat
         |> Seq.groupBy(fun (f, _, _, _) -> f)
-        |> Seq.map(fun (i, f) -> f |> Seq.map(fun (_, r, g, b) -> r, g, b))
+        |> Seq.map(fun (_, f) -> f |> Seq.map(fun (_, r, g, b) -> r, g, b))
         |> Seq.map(fun f -> f |> Seq.toList |> List.unzip3)
         |> Seq.map(fun (rg, gs, bs) -> (rg |> List.max) * (gs |> List.max) * (bs |> List.max))
         |> Seq.sum
