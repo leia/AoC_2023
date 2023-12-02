@@ -11,11 +11,11 @@ let main argv =
     let filenameEasy, fileNameHard = fileNames
     
     let first =
-        InputHandler.readFile filenameEasy 
-        |> day1.secondPart
+        InputHandler.readFile fileNameHard 
+        |> day2.firstPart
         
     let second =
         InputHandler.readFile fileNameHard 
-        |> day1.secondPart
+        |> day2.secondPart
     printfn "%A, %A" first second
     0 // return an integer exit code
