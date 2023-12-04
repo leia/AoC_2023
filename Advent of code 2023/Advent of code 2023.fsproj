@@ -8,12 +8,15 @@
 
     <ItemGroup>
         <Content Include="input\day1a.txt" />
-        <Content Include="input\day2a.txt" />
         <Content Include="input\day1b.txt" />
+        <Content Include="input\day2a.txt" />
         <Content Include="input\day2b.txt" />
+        <Content Include="input\day4a.txt" />
+        <Content Include="input\day4b.txt" />
         <Compile Include="Helpers.fs" />
         <Compile Include="day1.fs" />
         <Compile Include="day2.fs" />
+        <Compile Include="day4.fs" />
         <Compile Include="InputHandler.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
