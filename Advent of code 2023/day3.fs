@@ -39,7 +39,6 @@ module Symbol =
             index = index
         }
         
-        //
 let private getSymbolsAndValues (lineIndex: int, accsymbols: Symbol list, accvalues: NumberValue list) (line: string) =
     let numberValues =
         Regex.Matches(line, "(\d+)")
@@ -88,7 +87,7 @@ let private getSymbolsAndValues2 (lineIndex: int, accsymbols: Symbol list, accva
     
     lineIndex+1, (accsymbols @ symbols), (accvalues @ numberValues)
 
-let private isGear (numbers: NumberValue seq) (symbol: Symbol)=
+let private getGears (numbers: NumberValue seq) (symbol: Symbol)=
     let symbolBoundaries = [symbol.index - 1..symbol.index + 1] |> Set.ofList
     
     let r =
@@ -111,7 +110,7 @@ let secondPart(data: string seq) =
     
     let r =
       symbols
-      |> Seq.map(fun f -> f |> isGear values)
+      |> Seq.map(fun f -> f |> getGears values)
       |> Seq.toList
       |> Seq.sum
       
