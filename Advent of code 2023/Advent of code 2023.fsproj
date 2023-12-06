@@ -8,6 +8,7 @@
 
     <ItemGroup>
         <Content Include="input\day1a.txt" />
+        <Content Include="input\day1a2.txt" />
         <Content Include="input\day1b.txt" />
         <Content Include="input\day2a.txt" />
         <Content Include="input\day2b.txt" />
@@ -24,12 +25,18 @@
         <Compile Include="day2.fs" />
         <Compile Include="day3.fs" />
         <Compile Include="day4.fs" />
+        <Compile Include="day5.fs" />
         <Compile Include="day6.fs" />
         <Compile Include="InputHandler.fs" />
         <Compile Include="Tests.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="FSharp.Collections.ParallelSeq" Version="1.2.0" />
+      <PackageReference Include="FSharp.Control.AsyncSeq" Version="3.2.1" />
       <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
       <PackageReference Include="NUnit" Version="3.13.3" />
+    </ItemGroup>
+
 </Project>
