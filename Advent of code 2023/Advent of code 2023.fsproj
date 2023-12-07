@@ -7,19 +7,21 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Content Include="input\day1a.txt" />
-        <Content Include="input\day1a2.txt" />
+        <Content Include="testInput\day1a.txt" />
+        <Content Include="testInput\day1a2.txt" />
+        <Content Include="testInput\day2a.txt" />
+        <Content Include="testInput\day3a.txt" />
+        <Content Include="testInput\day4a.txt" />
+        <Content Include="testInput\day5a.txt" />
+        <Content Include="testInput\day6a.txt" />
+        <Content Include="testInput\day7a.txt" />
         <Content Include="input\day1b.txt" />
-        <Content Include="input\day2a.txt" />
         <Content Include="input\day2b.txt" />
-        <Content Include="input\day3a.txt" />
         <Content Include="input\day3b.txt" />
-        <Content Include="input\day4a.txt" />
         <Content Include="input\day4b.txt" />
-        <Content Include="input\day5a.txt" />
         <Content Include="input\day5b.txt" />
-        <Content Include="input\day6a.txt" />
         <Content Include="input\day6b.txt" />
+        <Content Include="input\day7b.txt" />
         <Compile Include="Helpers.fs" />
         <Compile Include="day1.fs" />
         <Compile Include="day2.fs" />
@@ -27,9 +29,11 @@
         <Compile Include="day4.fs" />
         <Compile Include="day5.fs" />
         <Compile Include="day6.fs" />
+        <Compile Include="day7.fs" />
         <Compile Include="InputHandler.fs" />
         <Compile Include="Tests.fs" />
         <Compile Include="Program.fs" />
+        
     </ItemGroup>
 
     <ItemGroup>
