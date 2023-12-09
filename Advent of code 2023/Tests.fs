@@ -1,5 +1,6 @@
 ﻿module Advent_of_code_2023.Tests
 
+open Advent_of_code_2023.input
 open NUnit.Framework
 open System
     
@@ -117,38 +118,34 @@ let ``Day 7 second part`` () =
 
     Assert.AreEqual(result, 5905)
 
-[<Test>]    
-let ``Day 8 first part`` () =
-    //let result =
-    //     InputHandler.readTestFile "day8a" 
-    //     |> day8.firstPart 
+// [<Test>]    
+// let ``Day 8 first part`` () =
+//     let result =
+//          InputHandler.readTestFile "day8a" 
+//          |> day8.firstPart 
+//     
+//     Assert.AreEqual(result, 2) 
     
-    //Assert.AreEqual(result, ()) //TODO
-    Assert.Inconclusive("Not implemented")
-    
-[<Test>]
-let ``Day 8 second part`` () =
-    // let result =
-    //     InputHandler.readTestFile "day8a" 
-    //     |> day8.secondPart 
-    
-    //Assert.AreEqual(result, ()) //TODO
-    Assert.Inconclusive("Not implemented")
+// [<Test>]
+// let ``Day 8 second part`` () =
+//     let result =
+//          InputHandler.readTestFile "day8a" 
+//          |> day8.secondPart 
+//     
+//     Assert.AreEqual(result, ())
     
 [<Test>]    
 let ``Day 9 first part`` () =
-    //let result =
-    //     InputHandler.readTestFile "day8a" 
-    //     |> day8.firstPart 
+    let result =
+         InputHandler.readTestFile "day9a" 
+         |> day9.firstPart 
     
-    //Assert.AreEqual(result, ()) //TODO
-    Assert.Inconclusive("Not implemented")
+    Assert.AreEqual(result, 114)
     
 [<Test>]
 let ``Day 9 second part`` () =
-    // let result =
-    //     InputHandler.readTestFile "day8a" 
-    //     |> day9.secondPart 
+    let result =
+         InputHandler.readTestFile "day9a" 
+         |> day9.secondPart 
     
-    //Assert.AreEqual(result, ()) //TODO
-    Assert.Inconclusive("Not implemented")
+    Assert.AreEqual(result, 2) 

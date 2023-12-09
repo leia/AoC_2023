@@ -15,6 +15,7 @@
         <Content Include="testInput\day5a.txt" />
         <Content Include="testInput\day6a.txt" />
         <Content Include="testInput\day7a.txt" />
+        <Content Include="testInput\day9a.txt" />
         <Content Include="input\day1b.txt" />
         <Content Include="input\day2b.txt" />
         <Content Include="input\day3b.txt" />
@@ -22,6 +23,7 @@
         <Content Include="input\day5b.txt" />
         <Content Include="input\day6b.txt" />
         <Content Include="input\day7b.txt" />
+        <Content Include="input\day9b.txt" />
         <Compile Include="Helpers.fs" />
         <Compile Include="day1.fs" />
         <Compile Include="day2.fs" />
@@ -30,6 +32,7 @@
         <Compile Include="day5.fs" />
         <Compile Include="day6.fs" />
         <Compile Include="day7.fs" />
+        <Compile Include="day9.fs" />
         <Compile Include="InputHandler.fs" />
         <Compile Include="Tests.fs" />
         <Compile Include="Program.fs" />
@@ -37,8 +40,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="FSharp.Collections.ParallelSeq" Version="1.2.0" />
-      <PackageReference Include="FSharp.Control.AsyncSeq" Version="3.2.1" />
       <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
       <PackageReference Include="NUnit" Version="3.13.3" />
     </ItemGroup>

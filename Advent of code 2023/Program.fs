@@ -1,5 +1,6 @@
 ﻿open System
 open Advent_of_code_2023
+open Advent_of_code_2023.input
 
 
 [<EntryPoint>]
@@ -10,10 +11,10 @@ let main argv =
         
     let first =
         InputHandler.readFile filename 
-        |> day7.firstPart
+        |> day9.firstPart
         
     let second =
         InputHandler.readFile filename 
-        |> day7.secondPart
+        |> day9.secondPart
     printfn "%A, %A" first second
     0 // return an integer exit code
