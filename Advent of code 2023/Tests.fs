@@ -11,7 +11,7 @@ let ``Day 1 first part`` () =
         InputHandler.readTestFile "day1a" 
         |> day1.firstPart
     
-    Assert.AreEqual(result, 142)
+    Assert.AreEqual(142, result)
 
 [<Test>]    
 let ``Day 1 second part`` () =
@@ -19,7 +19,7 @@ let ``Day 1 second part`` () =
         InputHandler.readTestFile "day1a2" 
         |> day1.secondPart
     
-    Assert.AreEqual(result, 281)
+    Assert.AreEqual(281, result)
     
 [<Test>]
 let ``Day 2 first part`` () =
@@ -27,7 +27,7 @@ let ``Day 2 first part`` () =
         InputHandler.readTestFile "day2a" 
         |> day2.firstPart
     
-    Assert.AreEqual(result, 8)
+    Assert.AreEqual(8, result)
 
 [<Test>]    
 let ``Day 2 second part`` () =
@@ -35,7 +35,7 @@ let ``Day 2 second part`` () =
         InputHandler.readTestFile "day2a" 
         |> day2.secondPart
     
-    Assert.AreEqual(result, 2286)
+    Assert.AreEqual(2286, result)
     
 [<Test>]
 let ``Day 3 first part`` () =
@@ -43,7 +43,7 @@ let ``Day 3 first part`` () =
         InputHandler.readTestFile "day3a" 
         |> day3.firstPart
     
-    Assert.AreEqual(result, 4361)
+    Assert.AreEqual(4361, result)
     
 [<Test>]
 let ``Day 3 second part`` () =
@@ -51,7 +51,7 @@ let ``Day 3 second part`` () =
         InputHandler.readTestFile "day3a" 
         |> day3.secondPart
     
-    Assert.AreEqual(result, 467835)
+    Assert.AreEqual(467835, result)
     
 [<Test>]
 let ``Day 4 first part`` () =
@@ -59,7 +59,7 @@ let ``Day 4 first part`` () =
         InputHandler.readTestFile "day4a" 
         |> day4.firstPart
     
-    Assert.AreEqual(result, 13)
+    Assert.AreEqual(13, result)
     
 [<Test>]
 let ``Day 4 second part`` () =
@@ -67,7 +67,7 @@ let ``Day 4 second part`` () =
         InputHandler.readTestFile "day4a" 
         |> day4.secondPart
     
-    Assert.AreEqual(result, 30)
+    Assert.AreEqual(30, result)
     
 [<Test>]
 let ``Day 5 first part`` () =
@@ -75,7 +75,7 @@ let ``Day 5 first part`` () =
         InputHandler.readTestFile "day5a" 
         |> day5.firstPart 
     
-    Assert.AreEqual(result, 35)
+    Assert.AreEqual(35, result)
     
 [<Test>]
 let ``Day 5 second part`` () =
@@ -83,7 +83,7 @@ let ``Day 5 second part`` () =
         InputHandler.readTestFile "day5a" 
         |> day5.secondPart 
     
-    Assert.AreEqual(result, 46)
+    Assert.AreEqual(46, result)
 
 
 [<Test>]    
@@ -92,7 +92,7 @@ let ``Day 6 first part`` () =
      InputHandler.readTestFile "day6a" 
      |> day6.firstPart 
 
-    Assert.AreEqual(result, 288)
+    Assert.AreEqual(288, result)
     
 [<Test>]
 let ``Day 6 second part`` () =
@@ -100,7 +100,7 @@ let ``Day 6 second part`` () =
         InputHandler.readTestFile "day6a" 
         |> day6.secondPart 
     
-    Assert.AreEqual(result, 71503)
+    Assert.AreEqual(71503, result)
     
 [<Test>]    
 let ``Day 7 first part`` () =
@@ -108,7 +108,7 @@ let ``Day 7 first part`` () =
      InputHandler.readTestFile "day7a" 
      |> day7.firstPart 
     
-    Assert.AreEqual(result, 6440)
+    Assert.AreEqual(6440, result)
     
 [<Test>]
 let ``Day 7 second part`` () =
@@ -116,7 +116,7 @@ let ``Day 7 second part`` () =
      InputHandler.readTestFile "day7a" 
      |> day7.secondPart 
 
-    Assert.AreEqual(result, 5905)
+    Assert.AreEqual(5905, result)
 
 // [<Test>]    
 // let ``Day 8 first part`` () =
@@ -140,7 +140,7 @@ let ``Day 9 first part`` () =
          InputHandler.readTestFile "day9a" 
          |> day9.firstPart 
     
-    Assert.AreEqual(result, 114)
+    Assert.AreEqual(114, result)
     
 [<Test>]
 let ``Day 9 second part`` () =
@@ -148,4 +148,20 @@ let ``Day 9 second part`` () =
          InputHandler.readTestFile "day9a" 
          |> day9.secondPart 
     
-    Assert.AreEqual(result, 2) 
+    Assert.AreEqual(2, result)
+ 
+[<Test>]   
+let ``Day 10 first part`` () =
+    let result =
+         InputHandler.readTestFile "day10a" 
+         |> day10.firstPart 
+    
+    Assert.AreEqual(8, result) 
+    
+[<Test>]
+let ``Day 10 second part`` () =
+    let result =
+         InputHandler.readTestFile "day10a2" 
+         |> day10.secondPart 
+    
+    Assert.AreEqual(4, result) 
