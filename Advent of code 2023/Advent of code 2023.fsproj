@@ -19,6 +19,7 @@
         <Content Include="testInput\day10a.txt" />
         <Content Include="testInput\day10a2.txt" />
         <Content Include="testInput\day11a.txt" />
+        <Content Include="testInput\day14a.txt" />
         <Content Include="input\day1b.txt" />
         <Content Include="input\day2b.txt" />
         <Content Include="input\day3b.txt" />
@@ -40,6 +41,7 @@
         <Compile Include="day9.fs" />
         <Compile Include="day10.fs" />
         <Compile Include="day11.fs" />
+        <Compile Include="day14.fs" />
         <Compile Include="InputHandler.fs" />
         <Compile Include="Tests.fs" />
         <Compile Include="Program.fs" />
