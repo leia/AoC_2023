@@ -19,4 +19,15 @@ module Math =
         | _, [] -> seq []
         | k, _ -> lst |> Seq.collect (fun x -> Seq.map (fun f -> x::f) (getPermsWithRep (k - 1) lst))
         
+module Array =
+    let tryMaxBy (f : 'a -> 'b) (arr : 'a[]) : 'a option =
+        if Array.isEmpty arr then None
+        else
+            arr |> Array.maxBy f |> Some
+            
+    let tryMinBy (f : 'a -> 'b) (arr : 'a[]) : 'a option =
+        if Array.isEmpty arr then None
+        else
+            arr |> Array.minBy f |> Some
+        
     

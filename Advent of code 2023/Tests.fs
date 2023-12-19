@@ -244,4 +244,36 @@ let ``Day 15 second part`` () =
          InputHandler.readTestFile "day15a" 
          |> day15.secondPart
     
-    Assert.AreEqual(525152, result) 
+    Assert.AreEqual(145, result)
+    
+[<Test>]   
+let ``Day 16 first part`` () =
+    let result =
+         InputHandler.readTestFile "day16a" 
+         |> day16.firstPart
+    
+    Assert.AreEqual(46, result) 
+    
+[<Test>]
+let ``Day 16 second part`` () =
+    let result =
+         InputHandler.readTestFile "day16a" 
+         |> day16.secondPart
+    
+    Assert.AreEqual(145, result)
+    
+[<Test>]   
+let ``Day 18 first part`` () =
+    let result =
+         InputHandler.readTestFile "day18a" 
+         |> day18.firstPart
+    
+    Assert.AreEqual(62, result) 
+    
+[<Test>]
+let ``Day 18 second part`` () =
+    let result =
+         InputHandler.readTestFile "day18a" 
+         |> day18.secondPart
+    
+    Assert.AreEqual(145, result) 
